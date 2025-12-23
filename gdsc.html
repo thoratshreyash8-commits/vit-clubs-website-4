@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GDSC | VIT Pune</title>
+    <link rel="stylesheet" href="club-style.css">
+</head>
+<body data-club="GDSC">
+
+
+<header class="club-hero">
+    <img src="images/gdsc.png" alt="GDSC Logo">
+    <h1>Google Developer Student Club</h1>
+    <p>Build • Learn • Grow with Google Technologies</p>
+</header>
+
+<section class="club-content">
+    <div class="info-card">
+    <h2>Update Club Committee</h2>
+    <input type="text" id="committeeInput" placeholder="Enter committee details">
+    <button onclick="updateCommittee('GDSC')">Update Committee</button>
+    <p id="committeeDisplay"></p>
+</div>
+
+<div class="info-card">
+    <h2>Update Success Story</h2>
+    <textarea id="storyInput" placeholder="Enter success story"></textarea>
+    <button onclick="updateStory('GDSC')">Save Story</button>
+    <button onclick="sendEmail('GDSC')">Email Story</button>
+    <p id="storyDisplay"></p>
+</div>
+
+    <div class="info-card">
+        <h2>About GDSC</h2>
+        <p>
+            Google Developer Student Clubs are university-based community groups
+            for students interested in Google developer technologies.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Activities</h2>
+        <ul>
+            <li>Workshops & Study Jams</li>
+            <li>Hackathons</li>
+            <li>Android & Web Development</li>
+            <li>Cloud & AI sessions</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h2>Who Can Join?</h2>
+        <p>All students interested in development and technology.</p>
+    </div>
+    
+
+    <a href="index.html" class="back-btn">← Back to Clubs</a>
+</section>
+
+</body>
+</html>

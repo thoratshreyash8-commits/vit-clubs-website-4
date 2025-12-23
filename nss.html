@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NSS | VIT Pune</title>
+    <link rel="stylesheet" href="club-style.css">
+</head>
+<body data-club="NSS">
+
+
+<header class="club-hero">
+    <img src="images/nss.png" alt="NSS Logo">
+    <h1>National Service Scheme</h1>
+    <p>Service • Leadership • Responsibility</p>
+</header>
+
+<section class="club-content">
+    <div class="info-card">
+    <h2>Update Club Committee</h2>
+    <input type="text" id="committeeInput" placeholder="Enter committee details">
+    <button onclick="updateCommittee('GDSC')">Update Committee</button>
+    <p id="committeeDisplay"></p>
+</div>
+
+<div class="info-card">
+    <h2>Update Success Story</h2>
+    <textarea id="storyInput" placeholder="Enter success story"></textarea>
+    <button onclick="updateStory('GDSC')">Save Story</button>
+    <button onclick="sendEmail('GDSC')">Email Story</button>
+    <p id="storyDisplay"></p>
+</div>
+
+
+    <div class="info-card">
+        <h2>About NSS</h2>
+        <p>
+            National Service Scheme (NSS) aims to develop student personality
+            through community service and social responsibility.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Activities</h2>
+        <ul>
+            <li>Social Awareness Campaigns</li>
+            <li>Blood Donation Camps</li>
+            <li>Cleanliness Drives</li>
+            <li>Rural Development Programs</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h2>Why Join NSS?</h2>
+        <p>
+            NSS helps students develop leadership skills,
+            empathy, teamwork, and a sense of civic duty.
+        </p>
+    </div>
+    
+
+    <a href="index.html" class="back-btn">← Back to Clubs</a>
+
+</section>
+
+</body>
+</html>

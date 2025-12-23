@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GedIT | VIT Pune</title>
+    <link rel="stylesheet" href="club-style.css">
+</head>
+<body data-club="GEDIT">
+
+
+<header class="club-hero">
+    <img src="images/gedit.png" alt="GedIT Logo">
+    <h1>GedIT Coding Club</h1>
+    <p>Code • Create • Conquer</p>
+</header>
+
+<section class="club-content">
+    <div class="info-card">
+    <h2>Update Club Committee</h2>
+    <input type="text" id="committeeInput" placeholder="Enter committee details">
+    <button onclick="updateCommittee('GDSC')">Update Committee</button>
+    <p id="committeeDisplay"></p>
+</div>
+
+<div class="info-card">
+    <h2>Update Success Story</h2>
+    <textarea id="storyInput" placeholder="Enter success story"></textarea>
+    <button onclick="updateStory('GDSC')">Save Story</button>
+    <button onclick="sendEmail('GDSC')">Email Story</button>
+    <p id="storyDisplay"></p>
+</div>
+
+    <div class="info-card">
+        <h2>About GedIT</h2>
+        <p>
+            GedIT is a coding community for students passionate about
+            competitive programming and software development.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Activities</h2>
+        <ul>
+            <li>DSA Practice</li>
+            <li>Competitive Coding</li>
+            <li>Web & App Development</li>
+        </ul>
+    </div>
+   
+
+
+    <a href="index.html" class="back-btn">← Back to Clubs</a>
+</section>
+
+</body>
+</html>

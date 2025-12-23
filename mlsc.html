@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MLSC | VIT Pune</title>
+    <link rel="stylesheet" href="club-style.css">
+</head>
+<body data-club="MLSC">
+
+
+<header class="club-hero">
+    <img src="images/mlsc.png" alt="MLSC Logo">
+    <h1>Microsoft Learn Student Club</h1>
+    <p>Learn • Build • Innovate with Microsoft</p>
+</header>
+
+<section class="club-content">
+    <div class="info-card">
+    <h2>Update Club Committee</h2>
+    <input type="text" id="committeeInput" placeholder="Enter committee details">
+    <button onclick="updateCommittee('GDSC')">Update Committee</button>
+    <p id="committeeDisplay"></p>
+</div>
+
+<div class="info-card">
+    <h2>Update Success Story</h2>
+    <textarea id="storyInput" placeholder="Enter success story"></textarea>
+    <button onclick="updateStory('GDSC')">Save Story</button>
+    <button onclick="sendEmail('GDSC')">Email Story</button>
+    <p id="storyDisplay"></p>
+</div>
+
+    <div class="info-card">
+        <h2>About MLSC</h2>
+        <p>
+            MLSC empowers students with Microsoft technologies like Azure,
+            AI, Web Development, and Cloud Computing.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Activities</h2>
+        <ul>
+            <li>Microsoft Workshops</li>
+            <li>Azure & Cloud Sessions</li>
+            <li>Certification Guidance</li>
+        </ul>
+    </div>
+    
+
+    <a href="index.html" class="back-btn">← Back to Clubs</a>
+</section>
+
+</body>
+</html>
