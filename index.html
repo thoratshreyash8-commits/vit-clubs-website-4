@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT Pune | Student Clubs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="login-modal" id="loginModal">
+    <div class="login-box">
+        <h2>Admin Login</h2>
+        <input type="text" id="adminUser" placeholder="Username">
+        <input type="password" id="adminPass" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <button class="close-btn" onclick="closeLogin()">Cancel</button>
+        <p id="loginMsg"></p>
+    </div>
+</div>
+
+<!-- ================= BACKGROUND ================= -->
+<div class="video-bg">
+    <video autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="overlay"></div>
+
+<!-- ================= CONTENT ================= -->
+<div class="content">
+
+<header>
+    <h1>VIT Pune Student Clubs</h1>
+    <p>Explore • Connect • Grow</p>
+</header>
+
+<!-- ================= ADMIN LOGIN BUTTON ================= -->
+<div class="login-section">
+    <button onclick="openLogin()">Admin Login</button>
+    <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
+</div>
+
+<!-- ================= ADMIN PANEL ================= -->
+<section class="admin-panel" id="adminPanel" style="display:none;">
+    <h2>Admin Control Panel</h2>
+
+    <div class="admin-card">
+
+        <div class="form-group">
+            <label>Select Club</label>
+            <select id="clubSelect">
+                <option value="">-- Select Club --</option>
+                <option value="GDSC">GDSC</option>
+                <option value="MLSC">MLSC</option>
+                <option value="GedIT">GedIT</option>
+                <option value="Robotics">Robotics Forum</option>
+                <option value="Zephyr">Zephyr</option>
+                <option value="Euphony">Euphony</option>
+                <option value="NSS">NSS</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Update Committee</label>
+            <input type="text" id="committeeInput" placeholder="Enter committee details">
+            <button onclick="updateCommittee()">Update Committee</button>
+        </div>
+
+        <div class="form-group">
+            <label>Update Success Story</label>
+            <textarea id="storyInput" placeholder="Enter success story"></textarea>
+            <div class="btn-row">
+                <button onclick="updateStory()">Update Story</button>
+                <button class="email-btn" onclick="sendEmail()">Email Story</button>
+            </div>
+        </div>
+
+        <p id="adminMsg" class="admin-msg"></p>
+    </div>
+</section>
+
+<!-- ================= CLUBS ================= -->
+<main>
+
+<section class="clubs-section">
+    <h2>Technical Clubs</h2>
+    <div class="club-container">
+
+        <div class="club-card" data-club="GDSC" data-page="gdsc.html">
+            <h3>GDSC</h3>
+            <p>Google Developer Student Club</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+        <div class="club-card" data-club="MLSC" data-page="mlsc.html">
+            <h3>MLSC</h3>
+            <p>Microsoft Learn Student Club</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+        <div class="club-card" data-club="Robotics" data-page="robotics.html">
+            <h3>Robotics Forum</h3>
+            <p>Innovation in Robotics & Automation</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+        <div class="club-card" data-club="GedIT" data-page="gedit.html">
+            <h3>GedIT Coding Club</h3>
+            <p>Programming & Software Development</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="clubs-section">
+    <h2>Non-Technical Clubs</h2>
+    <div class="club-container">
+
+        <div class="club-card" data-club="Zephyr" data-page="zephyr.html">
+            <h3>Zephyr</h3>
+            <p>Dance & Cultural Club</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+        <div class="club-card" data-club="Euphony" data-page="euphony.html">
+            <h3>Euphony</h3>
+            <p>Music & Performing Arts</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+        <div class="club-card" data-club="NSS" data-page="nss.html">
+            <h3>NSS</h3>
+            <p>National Service Scheme</p>
+            <button class="join-btn">Join Club</button>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 VIT Pune | Student Club Portal</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
